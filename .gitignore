@@ -1,0 +1,19 @@
+# Виртуальное окружение
+.venv/
+__pycache__
+*.pyc
+*.db
+*.sqlite
+*.log
+*.parquet
+*.csv
+*.tmp
+
+# PyCharm
+.idea/
+*.iml
+*.swp
+*.swo
+
+# Poetry
+poetry.toml
