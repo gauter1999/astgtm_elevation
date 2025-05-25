@@ -1,19 +1,25 @@
 # Виртуальное окружение
 .venv/
-__pycache__
+venv/
+env/
+__pycache__/
 *.pyc
-*.db
-*.sqlite
-*.log
-*.parquet
-*.csv
-*.tmp
 
-# PyCharm
+# PyCharm / IDE
 .idea/
 *.iml
-*.swp
-*.swo
+.vscode/
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.csv
+*.parquet
+*.sqlite
+*.db
 
 # Poetry
 poetry.toml
+build/
+dist/
+*.egg-info/
