@@ -1,0 +1,28 @@
+[project]
+name = "elevationh3"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "nik",email = "nikitachumack@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy (>=2.2.6,<3.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "h3 (>=4.2.2,<5.0.0)",
+    "rasterio (>=1.4.3,<2.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "scikit-image (>=0.25.2,<0.26.0)",
+    "ruff (>=0.11.11,<0.12.0)",
+    "clickhouse-connect (>=0.8.17,<0.9.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
