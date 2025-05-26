@@ -1,5 +1,4 @@
 INPUT_DIR = r"W:\Projects\russia\data"
-OUTPUT_DIR = r"W:\Projects\russia\output"
 
 CLICKHOUSE_CONFIG = {
     "host": "localhost",
