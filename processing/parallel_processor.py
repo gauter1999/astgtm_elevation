@@ -1,6 +1,6 @@
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
-from typing import List, Tuple, Union
+from typing import List, Tuple, Union, Sequence
 from clickhouse_connect.driver.client import Client
 from .file_processor import process_tif_file
 from database.clickhouse import insert_data
@@ -49,7 +49,7 @@ def process_and_upload_in_batches(
 
 
 def process_multiple_files_in_parallel(
-    file_paths: List[Union[str, Path]],
+    file_paths: Sequence[Union[str, Path]],
     max_workers: int = 6
 ) -> List[PointRecord]:
     """
